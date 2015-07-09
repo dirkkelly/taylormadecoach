@@ -1,0 +1,82 @@
+body
+  font-family: Arial
+  
+  strong
+    font-weight: bold
+    
+  em
+    font-style: italic
+    
+  a
+    color:= !yellow
+    
+  #root
+    
+    #head_container
+      +clearfix
+      height: 180px
+      padding-top: 20px
+      
+      #head
+        +grid-container
+        +pie-clearfix
+        height: 100%
+        position: relative
+        
+        #logo
+          +grid(24)
+        
+        #nav
+          position: absolute
+          bottom: 0
+          
+          li
+            +grid(3)
+              
+    #content_container
+      +pie-clearfix
+            
+      #content
+        +pie-clearfix
+        +grid-container
+        position: relative
+        
+        #content_banner
+          height: 200px
+          padding-bottom: 50px
+          
+          h2, h3
+            +grid(19)
+            +grid-prefix(1)
+        
+        #content_main
+          +grid(13)
+          +grid-prefix(5)
+          +grid-suffix(1)
+          min-height: 450px
+          padding-bottom: 15px
+          
+          .float
+            float: left
+            margin-right: 15px
+            margin-bottom: 15px
+          
+        #content_sub
+          +grid(5)
+          
+  #foot_container
+  
+    #foot
+      +grid-container
+              
+      #nav_alt
+        +grid-container
+        text-align: center
+      
+        li
+          display: inline
+      
+      span
+        display: block
+        width: 100%
+        text-align: center

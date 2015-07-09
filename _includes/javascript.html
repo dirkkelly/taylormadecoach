@@ -1,0 +1,31 @@
+<script type='text/javascript' src='http://www.google.com/jsapi'></script>
+<script type='text/javascript'>
+  google.load('jquery', '1.4.2');
+  google.load('jqueryui', '1.8.0');
+</script>
+
+<script type='text/javascript' src='/javascripts/modules/all.js'></script>
+
+<!--[if IE]>
+  <script type='text/javascript' src='/javascripts/modules/jquery-curvycorners.js'></script>
+  <script type='text/javascript'>
+    $(document).ready(function() {
+      $('#nav li a').corner({ bl: { radius: 4 }, br: { radius: 4 }, tl: { radius: 0 }, tr: { radius: 0 } }).css('height', '25px');
+    });
+  </script>
+<![endif]-->
+
+<!--[if lt IE 7]>
+  <script type='text/javascript' src='/javascripts/modules/ie-warning.js'></script>
+  <script style='text/javascript'>window.onload=function(){e("/images/modules/ie-warning/");}</script>
+<![endif]-->
+
+<script type='text/javascript'>
+  var gaJsHost = (('https:' == document.location.protocol) ? 'https://ssl.' : 'http://www.');
+  document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+  try
+  {
+    var pageTracker = _gat._getTracker("<r:config:setting key='site.analytics' />");
+    pageTracker._trackPageview();
+  } catch(err) {}
+</script>

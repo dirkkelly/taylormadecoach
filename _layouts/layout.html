@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html>
+  <head>
+    {% include meta.html %}
+    {% include stylesheets.html %}
+  </head>
+  <body class='Page'>
+    <div id='root'>
+      <div id='head_container'>
+        <div id='head'>
+          {% include head.html %}
+        </div>
+      </div>
+      <div id='content_container'>
+        {{ content }}
+      </div>
+      <div id='root_foot'>
+      </div>
+    </div>
+    <div id='foot_container'>
+      <div id='foot'>
+        {% include foot.html %}
+      </div>
+    </div>
+    {% include javascript.html %}
+  </body>
+</html>
+
